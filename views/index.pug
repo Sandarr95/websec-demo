@@ -1,0 +1,8 @@
+extends modules/skeleton
+
+block content
+  p You've logged in succcessfully as #{session.userId}
+  p Session will stay active until #{new Date(session.expiresAt).toLocaleTimeString()}
+  a(href="/information") Look at secret information
+  a(href="/note") Edit your note
+  a(href="/signout") Signout

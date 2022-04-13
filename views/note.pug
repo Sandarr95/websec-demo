@@ -1,0 +1,6 @@
+extends modules/skeleton
+
+block content
+  form(action="/note", method="post")
+    textarea(name="note") #{user.note}
+    input(type="submit" value="Save note") 

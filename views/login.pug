@@ -1,0 +1,19 @@
+extends modules/skeleton
+
+block content
+  form(action="/login", method="post")
+    label
+      div Username
+      if username
+        input(type="text" name="username" value=username)
+      else
+        input(type="text" name="username")
+    label
+      div Password
+      if password
+        input(type="password" name="password" value=password)
+      else
+        input(type="password" name="password")
+    if redirect
+      input(type="hidden" name="redirect" value=redirect)
+    input(type="submit" value="Login")
